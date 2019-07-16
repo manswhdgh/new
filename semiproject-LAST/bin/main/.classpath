@@ -1,0 +1,108 @@
+package Abc;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import java.awt.Label;
+import java.awt.Color;
+import net.miginfocom.swing.MigLayout;
+import javax.swing.SpringLayout;
+import com.jgoodies.forms.layout.FormLayout;
+import com.jgoodies.forms.layout.ColumnSpec;
+import com.jgoodies.forms.layout.FormSpecs;
+import com.jgoodies.forms.layout.RowSpec;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.JScrollBar;
+import java.awt.Scrollbar;
+import java.awt.TextArea;
+import java.awt.Font;
+import javax.swing.JLabel;
+import java.awt.Panel;
+import javax.swing.ImageIcon;
+
+public class OrderWaiting extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					OrderWaiting frame = new OrderWaiting();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public OrderWaiting() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 625, 1025);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.WHITE);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		
+		Label label = new Label("\uC81C\uD488\uC744 \uC900\uBE44\uD558\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\r\n");
+		label.setFont(new Font("Dialog", Font.BOLD, 18));
+		label.setBounds(9, 139, 301, 131);
+		label.setForeground(Color.WHITE);
+		label.setBackground(new Color(0, 0, 0));
+		label.setAlignment(Label.CENTER);
+		
+		Label label_1 = new Label("\uC8FC\uBB38\uD558\uC2E0 \uC81C\uD488\uC774 \uB098\uC654\uC2B5\uB2C8\uB2E4.");
+		label_1.setFont(new Font("Dialog", Font.BOLD, 18));
+		label_1.setBounds(316, 139, 283, 131);
+		label_1.setBackground(Color.BLACK);
+		label_1.setForeground(Color.WHITE);
+		label_1.setAlignment(Label.CENTER);
+		contentPane.setLayout(null);
+		contentPane.add(label);
+		contentPane.add(label_1);
+		
+		TextArea textArea = new TextArea();
+		textArea.setFont(new Font("Dialog", Font.BOLD, 35));
+		textArea.setBounds(9, 276, 301, 521);
+		contentPane.add(textArea);
+		
+		TextArea textArea_1 = new TextArea();
+		textArea_1.setFont(new Font("Dialog", Font.BOLD, 30));
+		textArea_1.setBounds(316, 276, 283, 521);
+		contentPane.add(textArea_1);
+		
+		Label label_2 = new Label("\uC8FC\uBB38 \uD604\uD669\uD310");
+		label_2.setForeground(new Color(255, 255, 255));
+		label_2.setBackground(new Color(255, 102, 102));
+		label_2.setAlignment(Label.CENTER);
+		label_2.setFont(new Font("Dialog", Font.BOLD, 24));
+		label_2.setBounds(0, 41, 609, 44);
+		contentPane.add(label_2);
+		
+		Label label_3 = new Label("");
+		label_3.setFont(new Font("Dialog", Font.BOLD, 24));
+		label_3.setBackground(new Color(255, 102, 102));
+		label_3.setAlignment(Label.CENTER);
+		label_3.setBounds(0, 894, 609, 44);
+		contentPane.add(label_3);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\1\\Desktop\\LOTTERIA2.png"));
+		lblNewLabel.setBounds(392, 817, 217, 57);
+		contentPane.add(lblNewLabel);
+	}
+}
