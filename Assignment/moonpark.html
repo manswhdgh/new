@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Team Assignment</title>
+	<meta name="author">
+	<meta name="description"/>
+	<meta name="keywords"/>
+	<meta name="Resource-type"/>
+
+
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		/*text-align:center;*/
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+    #slide1,
+    #slide2{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/bgr.jpg);
+	}
+	#section0 h1{
+		top: 35%;
+		transform: translateY(-50%);
+		position: relative;
+		color:#313131;
+		font-weight:bold;
+		text-shadow: 8px 6px 8px #353535;
+	}
+	#st0_special{
+		color:#1e1e1e;
+	}
+	#section1{
+		background-image: url(imgs/background.jpg);	
+		padding: 6% 0 0 0;
+	}
+	#section2{
+		background-image: url(imgs/background.jpg);
+		padding: 7% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/background.jpg);
+		padding: 3% 0 0 0;
+		text-align:center;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		/*background-image: url(imgs/background.jpg);*/
+		/*padding: 2% 0 3% 5%;*/
+	}
+	#slide2{
+		/*background-image: url(imgs/background.jpg);*/
+		/*padding: 6% 0 0 0;*/
+	}
+	#slide3{
+		/*background-image: url(imgs/background.jpg);*/
+		/*padding: 1% 0 0 0;*/
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	/*div 커스텀 CSS*/
+	.tablebg{
+		background-color:rgba(255,255,255,0.4);
+		box-shadow:5px 3px 6px #353535; 
+	}
+	.tablebg td{
+		padding:0;
+		margin:0;
+	}
+	#sec2{
+		margin-bottom:50px;
+		vertical-align: center;
+	}
+	#bonmun{
+		font-size : 15px;
+		color:black;
+		text-align:left;
+		margin-left :55px;
+		line-height:25px;
+	}
+	#title_1{
+		font-size:35px;
+		font-weight:bold;
+		margin-left:50px;
+		text-align:left;
+	}
+	#title_2{
+		font-size:25px;
+		font-weight:bold;
+		text-align:left;
+		margin-left:50px;
+	}
+	#bonmun_hr{
+		width:90%;
+		border: 1px solid black;
+	}
+	.bottom_li{
+		list-style-type: square;
+		margin-left:70px;
+		color:black;
+		text-align:left;
+	}
+	#title_api{
+		color:#828282;
+	}
+	</style>
+</head>
+<body>
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">홈</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">강의소개</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">커리큘럼</a></li>
+    <li data-menuanchor="4thPage"><a href="#4thPage">찾아오시는길</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0" align="center">
+		<h1 id = "title_h1"><span id = "st0_special">[국가전략산업]</span><br><br>공공 <span id="title_api">API</span>기반 빅데이터 엔지니어 양성 과정</h1>
+		<h1 id = "title_h1">- ICIA 교육원 -</h1>
+	</div>
+	<div class="section" id="section2">
+		<table style = "background-color:rgba(255,255,255,0.5);box-shadow:5px 3px 6px #353535; "width="1000px" height="650px" align = "center" >
+				<td>
+					<h2 id="title_1">공공 API 기반 빅데이터 시각화 엔지니어 양성과정이란?</h2>
+					<hr id = "bonmun_hr">
+					<p id = "bonmun">빅데이터는 기존 데이터보다 너무 방대하여 기존의 방법이나 도구로 수집, 저장, 분석이 어려운 데이터이다. 이를 해결하기 위해<br>
+						다양한 기술이 개발되고 있지만, 인공지능 API를 이용한 특화된 기술은 최근 통신가, 금융사 등 데이터 기반 산업의 핵심기반이 되고<br>
+						있어 앞으로는 전 산업분야에서 혁신적인 성장이 가능할 것으로 보인다. ICIA교육원의 [공공 API 기반 빅데이터 시각화 엔지니어<br>
+						과정]은 수집된 빅데이터를 인공지능 API를 이용해 효과적으로 추출,분석,추론 처리하고,시각화 과정을 통해 이용자에게 명확한<br>
+						정보를 제공할 수 있는 역량을 갖추도록 전문가를 양성하기 위한 과정이다.
+					</p>
+					<br>
+					<h2 id = "title_2">공공 API 기반 빅데이터 시각화 엔지니어 양성과정 요약</h2>
+					<hr id = "bonmun_hr">
+					<p id = "bonmun">
+						쏟아지는 엄청난 양의 데이터를 수집,분석하여 합리적인 결과를 도출하는 일이 기업의 경쟁력을 키워주는 시대가 도래 했다. 이번<br>
+						과정은 빅데이터를 통해 효과적인 데이터를 추출해 내기 위해 인공지능 API를 기반으로 이용자에게 원하는 정보를 제공해 주는<br>
+						프로그램 작성 능력을 IT프로젝트 현장과 동일한 국가직무표준방식으로 학습 한다.
+					</p>
+					<br>
+					<h2 id = "title_2">공공 API 기반 빅데이터 시각화 엔지니어 양성과정 장점</h2>
+					<hr id = "bonmun_hr">
+					<ul class = "bottom_li">
+						<li>시각화 실무 프로젝트를 통해 고객이 원하는 핵심정보를 최선의 표현방법으로 전달하는 능력을 갖춘 시각화<br>
+							전문가 양성을 목표로 한다.
+						</li>
+						<li>NCS기반의 체계적이고 표쥰화된 교육과정을 통한 서버와 웹 및 앱을 융합할 수 있는 실력을 진 프로그래머 양성 과정</li>
+						<li>널리 사용되는 JAVA 기반 서버 프레임워크를 이용한 웹 프로그래밍 능력을 갖춰 풍부한 취업처 확보가 가능</li>
+						<li>대용량 데이터를 분석 기획하고 수집,저장,처리하여 목적에 따라 분석하는 빅데이터 처리 능력을 갖춘다.</li>
+						<li>시간 시각화, 분포 시각화, 관계 시각화 등 다양한 데이터 시각화 기법을 이해하고 실습할 수 있도록 교과 편성</li>
+						<li>각종 시각화 라이브러리를 기반으로 웹 및 안드로이드 앱에서 다양한 형태의 그래프로 시각화 함으로써 명확하고 효과적으로<br>
+							전달할 수 있는 처리능력을 함양할 수 있다.
+						</li>
+					</ul>
+				</td>
+		</table>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1">
+			<table class = "tablebg" width="1000px" height="700px" align = "center">
+				<td><img src = "imgs/a1.jpg"></td>
+			</table> 
+		</div>
+		<div class="slide" id="slide2">
+			<table class = "tablebg" width="1000px" height="700px" align = "center">
+				<td><img src = "imgs/a2.jpg"></td>
+			</table>
+		</div>
+		<div class="slide" id="slide2">
+			<table class = "tablebg" width="1000px" height="700px" align = "center">
+				<td><img src = "imgs/a3.jpg"></td>
+			</table>
+		</div>
+		<div class="slide" id="slide2">
+			<table class = "tablebg" width="1000px" height="700px" align = "center">
+				<td><img src = "imgs/4-1.jpg"></td>
+			</table>
+		</div>
+		<div class="slide" id="slide3">
+			<table class = "tablebg" width="1000px" height="800px" align = "center">
+				<td><img src = "imgs/a4-2.jpg"></td>
+			</table>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<table class = "tablebg" width="1444px" height="837px" align = "center">
+				<td><img src = "imgs/map.png"></td>
+			</table>
+	</div>
+</div>
+
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.css"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage',{
+        verticalCentered: false,
+        sectionsColor: ['#4A6FB1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+		menu: '#menu',
+		navigation:true,
+		scrollOverflow: true,
+        css3:false
+    });
+</script>
+</body>
+</html>
